@@ -25,7 +25,8 @@ class SendCodeChooseProgCommand(sublime_plugin.TextCommand):
             if syntax == "r" or syntax == "rmd" or syntax == "rnw":
                 app_list = app_list + [
                     "R GUI", "RStudio Desktop", "Chrome-RStudio", "Safari-RStudio"]
-            if syntax in ["r", "python", "julia"]:
+            # if syntax in ["r", "python", "julia"]:
+            if syntax in ["r", "julia"]:
                 app_list = app_list + ["Chrome-Jupyter", "Safari-Jupyter"]
 
         elif plat == "windows":

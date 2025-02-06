@@ -49,8 +49,8 @@ class CodeGetter:
             return MarkDownCodeGetter(view)
         elif syntax == "rmd":
             return RMarkDownCodeGetter(view)
-        elif syntax == "python":
-            return PythonCodeGetter(view)
+        # elif syntax == "python":
+        #     return PythonCodeGetter(view)
         elif syntax == "julia":
             return JuliaCodeGetter(view)
         else:
@@ -301,6 +301,8 @@ class RCodeGetter(CodeGetter):
 class PythonCodeGetter(CodeGetter):
 
     def expand_line(self, s):
+        pass
+    def expand_lines(self, s):
         view = self.view
         if view.score_selector(s.begin(), "string"):
             return s

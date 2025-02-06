@@ -7,7 +7,7 @@ class Settings:
         "text.tex.latex.rsweave": "rnw",
         "text.html.markdown.rmarkdown": "rmd",
         "text.html.markdown": "md",
-        "source.python": "python",
+        # "source.python": "python",
         "source.julia": "julia"
     }
 

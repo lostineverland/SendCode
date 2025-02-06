@@ -35,8 +35,8 @@ class CodeSender:
         syntax = Settings(view).syntax()
         if syntax == "r" or syntax == "rmd" or syntax == "rnw":
             return RCodeSender(view, **kwargs)
-        elif syntax == "python":
-            return PythonCodeSender(view, **kwargs)
+        # elif syntax == "python":
+        #     return PythonCodeSender(view, **kwargs)
         elif syntax == "julia":
             return JuliaCodeSender(view, **kwargs)
         else:
